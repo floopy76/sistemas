@@ -1,0 +1,250 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root variables for easy color and font management */
+:root {
+  --primary-color: #1e4acf; /* Dark green */
+  --secondary-color: #2eb5d0a6; /* Light green */
+  --text-color: #333;
+  --background-color: #fff;
+  --font-family: 'Arial', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-menu a {
+  color: var(--background-color);
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: var(--secondary-color);
+}
+
+/* Logo styling */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Main section styling */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+/* Footer styling */
+footer {
+  padding: 1rem;
+}
+
+.footer-nav {
+  margin-top: 1rem;
+}
+
+.footer-nav a {
+  color: var(--background-color);
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-nav a:hover {
+  color: var(--secondary-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-menu li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Button styles for calls-to-action */
+button {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color:#1e4acf; /* Darker green */
+}
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+ /* header {
+    background-color: #333;
+    color: white;
+    padding: 10px;*/
+  
+  
+  header .logo {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+  }
+  
+  header .nav-menu {
+    list-style-type: none;
+  }
+  
+  header .nav-menu li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header .nav-menu a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #questionnaire {
+    margin-top: 30px;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #progress-display, #score-display {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  
+  #feedback {
+    font-size: 2em;
+    color: #000000;
+
+  }
+  #progress-chart {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#progressChart {
+    max-width: 800px;
+    margin: 0 auto;
+}   
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header .nav-menu {
+    list-style-type: none;
+    float: right;
+}
+
+header .nav-menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header .nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#questionnaire {
+    padding: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#progress-display, #score-display {
+    margin-top: 20px;
+}
+
+#progress-chart {
+    margin-top: 30px;
+}
+.feedbackMessage {
+    background: #4CAF50;
+}

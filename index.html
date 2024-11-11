@@ -1,51 +1,215 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo">AZ Group</a>
+      <ul class="nav-menu">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="services">
+        <section id="about">
+            <h2> AZ form</h2>
+            <p>usuario:</p>
+            <p>N* de cliente:</p>
+            <p>####</p>
+          </section>
+      
+          <section id="questionnaire">
+            <h2>Cuestionario de Evaluación</h2>
+            <div id="question-container">
+              <div class="question">
+                <p>Pregunta 1:La cosecha ha cumplido con los estándares de calidad </p>
+                <button class="option-button" data-answer="yes">Sí</button>
+                <button class="option-button" data-answer="no">No</button>
+              </div>
+              <div class="question" style="display: none;">
+                <p>Pregunta 2: ¿Los rendimientos obtenidos fueron consistentes en todas las parcelas de tu producción?</p>
+                <button class="option-button" data-answer="yes">Sí</button>
+                <button class="option-button" data-answer="no">No</button>
+              </div>
+              <div class="question" style="display: none;">
+                <p>Pregunta 3:¿La cosecha ha generado los márgenes de ganancia esperados según el plan de negocio?</p>
+                <button class="option-button" data-answer="yes">Sí</button>
+                <button class="option-button" data-answer="no">No</button>
+              </div>
+              <div class="question" style="display: none;">
+                <p>Pregunta 4: ¿Las inversiones realizadas en insumos y tecnología han resultado en un aumento de la eficiencia productiva</p>
+                <button class="option-button" data-answer="yes">Sí</button>
+                <button class="option-button" data-answer="no">No</button>
+              </div>
+              <div class="question" style="display: none;">
+                <p>Pregunta 5¿:La implementación de tecnología en la gestión de la producción ha mejorado los resultados en términos de calidad y cantidad? </p>
+                <button class="option-button" data-answer="yes">Sí</button>
+                <button class="option-button" data-answer="no">No</button>
+              </div>
+              <div class="question" style="display: none;">
+                <p>Pregunta 6:¿Las condiciones del mercado han sido favorables para vender tus productos a precios competitivos?  </p>
+                <button class="option-button" data-answer="yes">Sí</button>
+                <button class="option-button" data-answer="no">No</button>
+              </div>
+            </div>
+      
+            <div id="progress-display">Completaste 0 de 10 preguntas</div>
+            <div id="feedback" style="display: block;"></div>
+            <section id="about">
+                <section id="progress-chart">
+                    <h2>Progreso del Cuestionario</h2>
+                    <canvas id="progressChart" width="400" height="200"></canvas>
+                </div>
+                <div id="feedback" style="display: block;">
+                    <h3>Feedback Final:</h3>
+                    <p id="feedback-text"></p>
+                </div>
+                  </section>
+                  <div id="feedback">
+                 <h3>Seguimiento de Rendimiento</h3>   
+                <p>Estimado productor, aquí tienes un resumen de tu rendimiento en los últimos tres años:</p>
+
+                <p>2021: Producción total de 80 toneladas con un rendimiento promedio del 95% de calidad.<br> Implementación de tecnologías avanzadas aumentó la eficiencia en un 12%.</p>
+                <p>2022: Producción total de 85 toneladas con un rendimiento promedio del 97% de calidad. <br>Se mantuvo un enfoque en la rotación de cultivos, resultando en un crecimiento del 5% en la sostenibilidad del suelo.</p>
+                <p>2023: Producción total de 88 toneladas con un rendimiento promedio del 99% de calidad.<br> Se integraron nuevas técnicas de monitoreo climático, reduciendo las pérdidas por factores climáticos en un 8%.</p>
+                <p>Tendencia: ¡Tu rendimiento ha aumentado un 10% en los últimos tres años! Los indicadores de eficiencia <br> y sostenibilidad también muestran una tendencia ascendente, lo que refleja una optimización continua en tu proceso productivo.</p>
+                </div>
+                    </section>
+                    <div id="feedback">
+                      <h3> Perspectivas Comparativas</h3> 
+                    <p>Comparando tu desempeño con otros productores en tu región:</p>  
+                     <p>Rendimiento Promedio Regional (2023): 82% de calidad, 75 toneladas promedio.</p>
+                    <p>Posición Actual: Estás en el 10% superior de los productores en términos de calidad de producción.</p>
+                     <p> Puntos de referencia: Los productores en el rango superior aplicaron un 15% más <br>de técnicas de agricultura de precisión y tecnología de monitoreo de cultivos.</p>  
+                     <p> Recomendación: Continúa invirtiendo en tecnología de precisión para mejorar la eficiencia.<br> Considera explorar programas de formación en técnicas de manejo del suelo, ya que las prácticas sostenibles han demostrado un crecimiento adicional del rendimiento.></p>  
+                    </div>
+            </section>
+          </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 AZ Group</p>
+    <nav class="footer-nav">
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms of Use</a>
+    </nav>
+  </footer>
+  <script src="javascript.js"></script>
+</body>
+</html> !-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataforma Integral para Productores de Granos</title>
-    <link rel="stylesheet" href="style.css">
+    <title>AZ Group - Evaluación de Rendimiento</title>
+    <link rel="stylesheet" href="estiloejem.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-
-    
-    <nav class="navbar">
-        <div class="logo">Grupo de Sistemas</div>
-        <ul class="nav-links">
-            <li><a href="#questionnaire">Cuestionario</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
+  <header>
+    <nav>
+      <a href="/" class="logo">AZ Group</a>
+      <ul class="nav-menu">
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#about">Nosotros</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
     </nav>
+  </header>
 
- 
-    <section class="hero">
-        <div class="hero-overlay">
-            <div class="hero-content">
-                <h1>Optimización y Evaluación de Rendimiento</h1>
-                <p>Plataforma integral para que los productores de granos puedan evaluar y mejorar su eficiencia de producción.</p>
+  <main>
+    <section id="questionnaire">
+        <h2 class="fade-in">Evaluación de Rendimiento</h2>
+        <div id="question-container">
+            <div class="question slide-in">
+                <p>La cosecha ha cumplido con los estándares de calidad</p>
+                <button class="option-button" data-answer="yes">Sí</button>
+                <button class="option-button" data-answer="no">No</button>
+            </div>
+            <div class="question slide-in" style="display: none;">
+                <p>¿Los rendimientos fueron consistentes en todas las parcelas?</p>
+                <button class="option-button" data-answer="yes">Sí</button>
+                <button class="option-button" data-answer="no">No</button>
+            </div>
+            <div class="question slide-in" style="display: none;">
+                <p>¿La cosecha ha generado los márgenes de ganancia esperados según el plan de negocio?</p>
+                <button class="option-button" data-answer="yes">Sí</button>
+                <button class="option-button" data-answer="no">No</button>
+            </div>
+            <div class="question slide-in" style="display: none;">
+                <p>¿Las inversiones en tecnología han aumentado la eficiencia productiva?</p>
+                <button class="option-button" data-answer="yes">Sí</button>
+                <button class="option-button" data-answer="no">No</button>
+            </div>
+            <div class="question slide-in" style="display: none;">
+                <p>¿La implementación de tecnología ha mejorado los resultados en calidad y cantidad?</p>
+                <button class="option-button" data-answer="yes">Sí</button>
+                <button class="option-button" data-answer="no">No</button>
+            </div>
+            <div class="question slide-in" style="display: none;">
+                <p>¿Las condiciones del mercado han sido favorables para la venta a precios competitivos?</p>
+                <button class="option-button" data-answer="yes">Sí</button>
+                <button class="option-button" data-answer="no">No</button>
             </div>
         </div>
-    </section>
 
-    
-    <section id="questionnaire" class="section">
-        <h2>Cuestionario de Evaluación</h2>
-        <div class="questionnaire-container">
-            <div id="question-container" class="question"></div>
-            <div id="feedback" class="fade-in"></div>
+        <div id="progress-display" class="fade-in">Completaste 0 de 10 preguntas</div>
+        <section id="progress-chart">
+            <h2>Progreso del Cuestionario</h2>
+            <canvas id="progressChart" width="100" height="20"></canvas>
         </div>
+        <div id="feedback" style="display: block;">
+            <h3>Feedback Final:</h3>
+            <p id="feedback-text"></p>
+        </div>
+          </section>
+        <section id="about">
     </section>
 
-    
-    <section id="contact" class="section">
-        <h2>Contacto</h2>
-        <p>Para más información, póngase en contacto con nosotros a través de nuestro correo electrónico: <a href="mailto:info@az-group.com.ar">info@az-group.com.ar</a></p>
-    </section>
+    <section id="feedback" class="fade-in" >
+   <h3>Seguimiento de Rendimiento</h3>   
+  <p>Estimado productor, aquí tienes un resumen de tu rendimiento en los últimos tres años:</p>
 
-    <script src="estilo.js"></script>
+  <p>2021: Producción total de 80 toneladas con un rendimiento promedio del 95% de calidad.<br> Implementación de tecnologías avanzadas aumentó la eficiencia en un 12%.</p>
+  <p>2022: Producción total de 85 toneladas con un rendimiento promedio del 97% de calidad. <br>Se mantuvo un enfoque en la rotación de cultivos, resultando en un crecimiento del 5% en la sostenibilidad del suelo.</p>
+  <p>2023: Producción total de 88 toneladas con un rendimiento promedio del 99% de calidad.<br> Se integraron nuevas técnicas de monitoreo climático, reduciendo las pérdidas por factores climáticos en un 8%.</p>
+  <p>Tendencia: ¡Tu rendimiento ha aumentado un 10% en los últimos tres años! Los indicadores de eficiencia <br> y sostenibilidad también muestran una tendencia ascendente, lo que refleja una optimización continua en tu proceso productivo.</p>
+  </div>
+      </section>
+      <div id="feedback" class="fade-in">
+        <h3> Perspectivas Comparativas</h3> 
+      <p>Comparando tu desempeño con otros productores en tu región:</p>  
+       <p>Rendimiento Promedio Regional (2023): 82% de calidad, 75 toneladas promedio.</p>
+      <p>Posición Actual: Estás en el 10% superior de los productores en términos de calidad de producción.</p>
+       <p> Puntos de referencia: Los productores en el rango superior aplicaron un 15% más <br>de técnicas de agricultura de precisión y tecnología de monitoreo de cultivos.</p>  
+       <p> Recomendación: Continúa invirtiendo en tecnología de precisión para mejorar la eficiencia.<br> Considera explorar programas de formación en técnicas de manejo del suelo, ya que las prácticas sostenibles han demostrado un crecimiento adicional del rendimiento.></p>  
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 AZ Group</p>
+    <nav class="footer-nav">
+      <a href="#privacy">Política de Privacidad</a>
+      <a href="#terms">Términos de Uso</a>
+    </nav>
+  </footer>
+  <script src="javascript.js"></script>
 </body>
 </html>
-
 
